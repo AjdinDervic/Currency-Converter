@@ -21,7 +21,7 @@ This project was developed to demonstrate the ability to work with basic program
 This project was collaboratively developed by:
 
 - **Ajdin Dervić**
-- **Aldin Čimić**
+- **Aldin Ćimić**
 - **Ivan Jeličić**
 
 ## 🚀 Features
