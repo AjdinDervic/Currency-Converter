@@ -15,10 +15,10 @@ class Program
 
     public class CurrencyData
     {
-        public bool Success { get; set; }
-        public long Timestamp { get; set; }
-        public string Base { get; set; }
-        public string Date { get; set; }
+      //  public bool Success { get; set; }
+       // public long Timestamp { get; set; }
+       // public string Base { get; set; }
+       // public string Date { get; set; }
         public Dictionary<string, Currency> Rates { get; set; }
     }
 
@@ -35,6 +35,8 @@ class Program
         if (currencyData == null)
         {
             Console.WriteLine("Failed to load currency data.");
+            Console.WriteLine("Press any key to exit the program...");
+            Console.ReadKey();
             return;
         }
 
@@ -47,6 +49,8 @@ class Program
         if (!currencyData.Rates.ContainsKey(fromCurrency) || !currencyData.Rates.ContainsKey(toCurrency))
         {
             Console.WriteLine("One or both currency codes are invalid.");
+            Console.WriteLine("Press any key to exit the program...");
+            Console.ReadKey();
             return;
         }
 
@@ -59,6 +63,8 @@ class Program
         if (!File.Exists(filePath))
         {
             Console.WriteLine($"JSON file not found: {filePath}");
+            Console.WriteLine("Press any key to exit the program...");
+            Console.ReadKey();
             return null;
         }
 
@@ -71,6 +77,8 @@ class Program
         catch (Exception ex)
         {
             Console.WriteLine($"Error loading currency data: {ex.Message}");
+            Console.WriteLine("Press any key to exit the program...");
+            Console.ReadKey();
             return null;
         }
     }
