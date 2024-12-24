@@ -62,7 +62,7 @@ node currency_converter.js
 
 ## Example Usage
 
+Enter the source currency code: USD
+Enter the target currency: EUR
 Enter the amount to convert: 100
-Select the source currency (USD, EUR, BAM): USD
-Select the target currency (USD, EUR, BAM): EUR
 Converted amount: 92.00 EUR
