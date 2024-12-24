@@ -5,7 +5,7 @@ using System.Text.Json;
 
 class Program
 {
-    // Klasa za reprezentaciju valute
+    // Class that represents currency
     public class Currency
     {
         public double Rate { get; set; }
